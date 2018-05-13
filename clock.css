@@ -39,4 +39,9 @@ html {
       background:black;
       position: absolute;
       top:50%;
+      transform-origin: 100%; /* allows hand to rotate from the end, not center */
+      transform: rotate(90deg); /* to start div vertical, not horizontal */
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); /*hand tick back motion */
+      
     }
